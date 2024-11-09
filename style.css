@@ -1,0 +1,27 @@
+body {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1500px;
+  height: 900px;
+  border: 2px solid black;
+
+  /* GRID STUFF BELOW THIS LINE */
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 1fr repeat(3, 5fr);
+}
+
+.box {
+  font-size: 1.5rem;
+  border: 2px solid black;
+  display: flex;
+}
+
+.box.top {
+  align-items: center;
+  justify-content: center;
+}
